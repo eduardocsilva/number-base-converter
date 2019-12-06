@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>JS Base Converter</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center-container">
+        <h1 class="header">JS Base Converter</h1>
+        <form id="conversion" action="event.preventDefault()">
+            Decimal <input id="decField" class="field" type="text" autocomplete="off"><br>
+            Binary <input id="binField" class="field" type="text" disabled><br>
+            <input id="button" class="button" type="submit" value="Convert">
+        </form>
+    </div>
+    <script src="scripts/baseConverter.js"></script>
+</body>
+
+<footer>
+    <span class="footer"></span>
+    <script>
+        let year = new Date().getFullYear();
+        document.getElementsByClassName("footer")[0].innerText = `© ${year} - Eduardo Silva`;
+    </script>
+</footer>
+
+</html>
