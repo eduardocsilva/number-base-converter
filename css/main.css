@@ -37,8 +37,19 @@ body {
     border-radius: 5px;
     background-color: #F5F5F5;
     margin: 1em;
-    width: 75%;
+    width: 74%;
     height: 2em;
+}
+
+.comboBox {
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid;
+    border-color: #DDD;
+    background-color: #F5F5F5;
+    margin: 1em;
+    width: 75%;
+    height: 2.2em;
 }
 
 .button {
@@ -48,6 +59,8 @@ body {
     font-size: 1em;
     background-color: #F5F5F5;
     margin: 1em;
+    width: 30%;
+    height: 2em;
 }
 
 .button:active {

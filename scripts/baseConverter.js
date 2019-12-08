@@ -1,22 +1,31 @@
 const form = document.querySelector("#conversion");
-const decimalField = document.querySelector("#decField");
-const binaryField = document.querySelector("#binField");
+const fromBase = document.querySelector("#fromBase");
+const toBase = document.querySelector("#toBase");
+const fromField = document.querySelector("#fromField");
+const toField = document.querySelector("#toField");
 const convertButton = document.querySelector("#button");
 
-function convertDecToBin(dec) {
-    let bin = 0;
-    let bits = 0;
-
-    while (dec != 0) {
-        console.log(`bin = ${bin} and dec = ${dec}`);
-        bin += (dec % 2) * Math.pow(10, bits++);
-        dec = Math.floor(dec / 2);
-    }
-
-    return bin;
-}
+const conversions = {};
+conversions.BinToBin = bin => parseInt(bin, 2).toString(2);
+conversions.BinToDec = bin => parseInt(bin, 2).toString(10);
+conversions.BinToHex = bin => parseInt(bin, 2).toString(16).toUpperCase();
+conversions.DecToBin = dec => parseInt(dec, 10).toString(2);
+conversions.DecToDec = dec => parseInt(dec, 10).toString(10);
+conversions.DecToHex = dec => parseInt(dec, 10).toString(16).toUpperCase();
+conversions.HexToBin = hex => parseInt(hex, 16).toString(2);
+conversions.HexToDec = hex => parseInt(hex, 16).toString(10);
+conversions.HexToHex = hex => parseInt(hex, 16).toString(16).toUpperCase();
 
 form.addEventListener("submit", e => e.preventDefault());
 
-convertButton.addEventListener("click", 
-    () => binaryField.value = convertDecToBin(decimalField.value));
+fromBase.addEventListener("change", () => {
+    fromField.value = "";
+    toField.value = "";
+});
+
+toBase.addEventListener("change", () => toField.value = "");
+
+convertButton.addEventListener("click", () => {
+    let conversion = fromBase.value + "To" + toBase.value;
+    toField.value = conversions[conversion](fromField.value);
+});

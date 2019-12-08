@@ -13,8 +13,20 @@
     <div class="center-container">
         <h1 class="header">JS Base Converter</h1>
         <form id="conversion" action="event.preventDefault()">
-            Decimal <input id="decField" class="field" type="text" autocomplete="off"><br>
-            Binary <input id="binField" class="field" type="text" disabled><br>
+            <select class="comboBox" id="fromBase">
+                <option value="Bin">Binary</option>
+                <option value="Dec" selected="selected">Decimal</option>
+                <option value="Hex">Hexadecimal</option>
+            </select>
+            <input id="fromField" class="field" type="text" autocomplete="off"><br>
+
+            <select class="comboBox" id="toBase" value="Bin">
+                <option value="Bin" selected="selected">Binary</option>
+                <option value="Dec">Decimal</option>
+                <option value="Hex">Hexadecimal</option>
+            </select>
+            <input id="toField" class="field" type="text" disabled><br>
+
             <input id="button" class="button" type="submit" value="Convert">
         </form>
     </div>
