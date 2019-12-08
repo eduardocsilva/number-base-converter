@@ -29,11 +29,15 @@ body {
     font-weight: bolder;
 }
 
-.comboBox {
+input, select, option {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     -ms-appearance: none;
+    vertical-align:top;
     font-size: 1em;
     text-align: center;
     padding-left: 0.5em;
@@ -44,22 +48,6 @@ body {
     margin: 1em;
     width: 75%;
     height: 2em;
-}
-
-.field {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -ms-appearance: none;
-    font-size: 1em;
-    text-align: center;
-    border: 1px solid;
-    border-color: #DDD;
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 1em;
-    width: 74%;
-    height: 1.7em;
 }
 
 .button {
