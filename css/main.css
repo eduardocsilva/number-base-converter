@@ -30,6 +30,7 @@ body {
 }
 
 .field {
+    -webkit-appearance: none;
     font-size: 1em;
     text-align: center;
     border: 1px solid;
@@ -42,8 +43,10 @@ body {
 }
 
 .comboBox {
+    -webkit-appearance: none;
     font-size: 1em;
     text-align: center;
+    padding-left: 0.5em;
     border: 1px solid;
     border-color: #DDD;
     background-color: #F5F5F5;
@@ -53,6 +56,7 @@ body {
 }
 
 .button {
+    -webkit-appearance: none;
     border: 1px solid;
     border-color: #DDD;
     border-radius: 5px;
