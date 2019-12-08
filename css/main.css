@@ -29,22 +29,6 @@ body {
     font-weight: bolder;
 }
 
-.field {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -ms-appearance: none;
-    font-size: 1em;
-    text-align: center;
-    border: 1px solid;
-    border-color: #DDD;
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 1em;
-    width: 75%;
-    height: 2em;
-}
-
 .comboBox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -59,7 +43,23 @@ body {
     background-color: #F5F5F5;
     margin: 1em;
     width: 75%;
-    height: 2.2em;
+    height: 2em;
+}
+
+.field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid;
+    border-color: #DDD;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin: 1em;
+    width: 74%;
+    height: 1.7em;
 }
 
 .button {
