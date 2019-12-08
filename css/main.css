@@ -31,6 +31,9 @@ body {
 
 .field {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
     font-size: 1em;
     text-align: center;
     border: 1px solid;
@@ -38,17 +41,21 @@ body {
     border-radius: 5px;
     background-color: #F5F5F5;
     margin: 1em;
-    width: 74%;
+    width: 75%;
     height: 2em;
 }
 
 .comboBox {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
     font-size: 1em;
     text-align: center;
     padding-left: 0.5em;
     border: 1px solid;
     border-color: #DDD;
+    border-radius: 5px;
     background-color: #F5F5F5;
     margin: 1em;
     width: 75%;
@@ -57,6 +64,9 @@ body {
 
 .button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
     border: 1px solid;
     border-color: #DDD;
     border-radius: 5px;
