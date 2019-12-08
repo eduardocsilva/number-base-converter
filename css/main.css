@@ -61,6 +61,7 @@ input, select, option {
     border-color: #DDD;
     border-radius: 5px;
     font-size: 1em;
+    text-align: center;
     background-color: #F5F5F5;
     margin: 1em;
     width: 30%;

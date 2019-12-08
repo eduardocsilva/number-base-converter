@@ -26,6 +26,7 @@ fromBase.addEventListener("change", () => {
 toBase.addEventListener("change", () => toField.value = "");
 
 convertButton.addEventListener("click", () => {
+    if (!fromField.value) return;
     let conversion = fromBase.value + "To" + toBase.value;
     toField.value = conversions[conversion](fromField.value);
 });
